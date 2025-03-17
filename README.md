@@ -9,13 +9,14 @@ This Terraform module provides a foundational setup for deploying virtual machin
 * **Storage Management:** Handles storage pools and disk configurations.
 * **Cloud-Init Support:** Integrates with Cloud-Init for initial VM/container configuration.
 * **Template Support:** Enables deployment from existing Proxmox templates.
+    - This module will create a template for you that you can use or change later.
 * **Resource Customization:** Allows fine-grained control over CPU, memory, and disk resources.
 * **Firewall Management:** Basic firewall rule management.
 * **SSH Key Injection:** Injects SSH keys for secure access.
 
 ## Prerequisites
 
-* Terraform installed (version >= 1.0 recommended).
-* Proxmox VE server accessible via API.
-* Proxmox API token or user credentials.
+* Terraform installed (version >= 1.5 recommended).
+* Proxmox VE server accessible 3.7-1 or later 
+* Proxmox user or root user and password 
 * Appropriate Proxmox storage and network configurations.
