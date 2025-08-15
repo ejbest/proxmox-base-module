@@ -46,7 +46,7 @@ resource "proxmox_vm_qemu" "proxmox_vm_qemu" {
       }
       scsi1 {
         cdrom {
-          iso = "local:${proxmox_cloud_init_disk.ci.id}"
+          iso = "${proxmox_cloud_init_disk.ci.id}"
         }
       }
     }
