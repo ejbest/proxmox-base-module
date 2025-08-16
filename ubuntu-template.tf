@@ -1,7 +1,7 @@
 resource "null_resource" "ubuntu-template" {
-  triggers = {
-    key = uuid()
-  }
+  #triggers = {
+  #  key = uuid()
+  #}
   connection {
     type     = "ssh"
     user     = "root"
